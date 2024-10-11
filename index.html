@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.1.0/jsencrypt.min.js"></script>
+  <title>Cifrado AES y RSA</title>
+</head>
+
+<body>
+  <main>
+
+      <div id="AES" class="contenedor">
+        <h1>Cifrado AES</h1>
+        <label for="msj">Mensaje deseado:</label> <br />
+        <textarea id="msj" rows="4" cols="50" placeholder="Ingresar mensaje"></textarea>
+        <br /><br />
+        <div class="botones">
+          <button onclick="procesar()">Procesar mensaje</button>
+        </div>
+        <div id="resultados">
+          <p id="mensajeProcesadoCA"></p>
+          <p id="mensajeProcesadoCR"></p>
+          <p id="mensajeProcesadoDR"></p>
+          <p id="mensajeProcesadoDA"></p>
+        </div>
+        <br /><br /><br />
+      <a href="indexant.html"></a>
+      </div>
+      <script src="js/script.js"></script>
+  </main>
+  </body>
+</html>
